@@ -1,16 +1,16 @@
 package week06_132504;
 
-class Handphone extends Barang {
-	private String warna;
-	public static int total = 0;
-	
-	public Handphone(int Id, String nama, double harga, String warna, int stok) {
-		super(Id, nama, harga);
-		this.warna = warna;
-		total++;
-	}
-	public String getWarna() {
-		return warna;
-	}
-	
+public class Handphone extends Barang {
+    private String warna;
+    public static int total = 0;
+
+    public Handphone(int id, String nama, double harga, int stok, String warna) {
+        super(id, nama, harga, stok);
+        this.warna = warna;
+        total++;
+    }
+
+    public String getWarna() {
+        return warna;
+    }
 }
